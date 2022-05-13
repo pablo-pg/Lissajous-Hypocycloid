@@ -1,0 +1,66 @@
+h1 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0%;
+	font-size: 150%;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 2%;
+	font-size: 100%;
+}
+
+p {
+  text-align: center;
+  font-family: 'Lucida Sans', Arial, sans-serif;
+  display: block;
+}
+
+header {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+body {
+  background: white;
+  color: rgb(0, 0, 0);
+}
+
+canvas {
+  background: rgb(180, 180, 180);
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.git-item {
+  grid-row: 1 / span 7;
+}
+
+.btn-group {    
+    text-align: center;
+}
+
+.button {
+  background-color: #5bff5b;
+}
+
+.active {
+  background-color: #5bff5b;
+}
+
+.inactive {
+  background-color: #ff5959;
+}
+

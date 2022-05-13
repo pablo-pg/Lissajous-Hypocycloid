@@ -1,0 +1,63 @@
+<!--  
+   Universidad de La Laguna
+	 Escuela Superior de Ingeniería y Tecnología
+	 Grado en Ingeniería Informática
+	 Programación de Aplicaciones Interactivas
+   @author Pablo Perez González
+   @since May 2022
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Lissajous Curves</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+		<link rel="stylesheet" href="css/basic.css">
+    <script defer type="module" src="js/lissajous-cli.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1><a href="http://10.6.129.183:8080/" class="link">Home</a></h1>
+    </header>
+	  <h1>ES6 Object Oriented Canvas Lissajous curves</h1>
+    <h3>Autor: Pablo Pérez González</h3>
+    <div class="grid-container">
+      <div id="canvasLocation" class="git-item" title="Script place"></div>
+
+      <div>
+        <label for="amplitudA">Amplitud A: </label>
+        <input name="amplitudA" type="range" id="amplitudA" min="0" max="400" value="200" oninput="this.nextElementSibling.value = this.value">
+        <output for="amplitudA" id="amplitudA-output">200</output>
+      </div>
+      <div>
+        <label for="amplitudB">Amplitud B: </label>
+        <input name="amplitudB" type="range" id="amplitudB" min="0" max="400" value="200" oninput="this.nextElementSibling.value = this.value">
+        <output for="amplitudB" id="amplitudB-output">200</output>
+      </div>
+      <div>
+        <label for="xlobA">"Lóbulos" horizontales: </label>
+        <input name="xlobA" type="range" id="xlobA" min="1" max="20" value="5" step="1" oninput="this.nextElementSibling.value = this.value">
+        <output for="xlobA" id="xlobA-output">5</output>
+      </div>
+      <div>
+        <label for="ylobB">"Lóbulos" verticales: </label>
+        <input name="ylobB" type="range" id="ylobB" min="1" max="20" value="6" step="1" oninput="this.nextElementSibling.value = this.value">
+        <output for="xlobB" id="xlobB-output">6</output>
+      </div>
+
+      <!-- <div>
+        <label for="phi">"Fase: </label>
+        <input name="phi" type="range" id="phi" min="0" max="3.1492" value="1" step="0.01" oninput="this.nextElementSibling.value = this.value">
+         <label for="xlobA" id="xlobA-output">76</label>
+      </div> -->
+
+      <label class="toggle">
+        <span class="onoff">Animación: </span>
+        <input name="animation" type="checkbox" id="animation" checked="true">
+        <span class="slider round"></span>
+      </label>
+
+    </div>
+  </body>
+</html>

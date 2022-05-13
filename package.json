@@ -1,0 +1,48 @@
+{
+  "name": "2021-2022_p11_lissajous",
+  "version": "1.0.0",
+  "description": "PAI Lab assignment #11. HML Canvas API. Event driven Lissajous curves",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@exercism/eslint-config-javascript": "^0.6.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.25",
+    "babel-jest": "^27.5.1",
+    "core-js": "^3.21.1",
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^27.5.1",
+    "jsdoc": "^3.6.10",
+    "tui-jsdoc-template": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "jest --watchAll --verbose",
+    "coverage": "jest --coverage --verbose",
+    "docs": "jsdoc --private -d docs -c jsdoc.json",
+    "start": "node www/js/app.cjs",
+    "install-eslint": "npm init @eslint/config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P11-Lissajous.git"
+  },
+  "keywords": [
+    "Javascript",
+    "HTML",
+    "canvas",
+    "events",
+    "lissajous"
+  ],
+  "author": "F. de Sande <fsande@ull.es>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P11-Lissajous/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-PAI-2021-2022/2021-2022-PAI-P11-Lissajous#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
