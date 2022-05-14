@@ -25,6 +25,7 @@ export class Hypocycloid {
   #bigCircleRadious = undefined;
   #innerCircleRadious = undefined;
   #enableAnimation = true;
+  #showCircles = true;
   #phase = 0;
   #velocity = undefined;
   #canvas = document.createElement('CANVAS');
@@ -90,13 +91,15 @@ export class Hypocycloid {
     ctx.fill();
 
     // Paints the big circle
-    ctx.moveTo(this.#bigCircleRadious, 0);
-    ctx.arc(0, 0, this.#bigCircleRadious, 0, 2 * Math.PI);
+    if (this.#showCircles) {
+      ctx.moveTo(this.#bigCircleRadious, 0);
+      ctx.arc(0, 0, this.#bigCircleRadious, 0, 2 * Math.PI);
 
-    // Paints the little circle
-    ctx.moveTo(xPos + this.#innerCircleRadious, yPos);
-    ctx.arc(xPos, yPos, this.#innerCircleRadious, 0, 2 * Math.PI);
-    ctx.stroke();
+      // Paints the little circle
+      ctx.moveTo(xPos + this.#innerCircleRadious, yPos);
+      ctx.arc(xPos, yPos, this.#innerCircleRadious, 0, 2 * Math.PI);
+      ctx.stroke();
+    }
   }
 
 
@@ -130,6 +133,13 @@ export class Hypocycloid {
         MIN_PERCENTAGE_OF_INNER_RADIOUS) {
       this.#innerCircleRadious -= POINTS_TO_AUMENT;
     }
+  }
+
+  /**
+   * Change the state of showCircles
+   */
+  showCircles() {
+    this.#showCircles = this.#showCircles ? false : true;
   }
 
   /**

@@ -54,6 +54,7 @@ export class HypoController {
 
     this.#ocultarCirculos.addEventListener('click', (event) => {
       this.#setColor(event);
+      this.#hypocycloid.showCircles();
     });
   }
 
