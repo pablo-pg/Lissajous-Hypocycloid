@@ -14,8 +14,8 @@
 
 'use strict';
 
-import {Hypocycloid} from '../../src/hypocycloid.js';
-import {HypoController} from '../../src/hypocycloid-contr.js';
+import {Hypocycloid} from './hypocycloid.js';
+import {HypoController} from './hypocycloid-contr.js';
 
 /**
  * The main program
