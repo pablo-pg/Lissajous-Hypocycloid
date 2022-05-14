@@ -14,8 +14,8 @@
 
 'use strict';
 
-import {Lissajous} from '../../my_modules/lissajous.js';
-import {LissajousController} from '../../my_modules/lissajous-contr.js';
+import {Lissajous} from '../../src/lissajous.js';
+import {LissajousController} from '../../src/lissajous-contr.js';
 
 /**
  * The main program
