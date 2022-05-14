@@ -137,9 +137,10 @@ export class Hypocycloid {
 
   /**
    * Change the state of showCircles
+   * @param {onoff} Button state
    */
-  showCircles() {
-    this.#showCircles = this.#showCircles ? false : true;
+   showCircles(onoff) {
+    this.#showCircles = Boolean(onoff);
   }
 
   /**

@@ -22,7 +22,7 @@
     "watch": "jest --watchAll --verbose",
     "coverage": "jest --coverage --verbose",
     "docs": "jsdoc --private -d docs -c jsdoc.json",
-    "start": "node www/js/app.cjs",
+    "start": "node docs/js/app.cjs",
     "install-eslint": "npm init @eslint/config"
   },
   "repository": {
